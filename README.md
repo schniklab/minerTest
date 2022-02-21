@@ -1,5 +1,13 @@
-Commands:
+# Commands mac Os & Linux & Rasppy
 ## System prepairing ##
+# for SSh on terminal:
+
+## open Terminal on Mac! use it with sudo on macOs it ask for the mac passwort in terminal first!
+Second is your Rasppy passwd
+
+shh -p 22 pi@192.168.1.1
+
+# on Rasperry direktly or  SSH on youre Remote Computer also on Virtualbox
 
 sudo apt update 
 sudo apt full-upgrade
@@ -9,7 +17,7 @@ sudo apt-get install git build-essential cmake libuv1-dev libssl-dev libhwloc-de
  
 shutdown -r now (System Neustart)
  
-## XMRIG Compile (rasperry)
+## XMRIG Compiling on Rasppery eg. Linux  
  
 git clone https://github.com/schniklab/minerTest
 (https://github.com/xmrig/xmrig.git)
@@ -20,21 +28,19 @@ sudo cmake ..
 sudo make
 ## Take Time ! 20 - 30 Min. ##
 ## Scipt Start
-~/xmrig/build $ sudo ./xmrig -o xmr.2miners.com:2222 -u 887d4UM3gdCWPMtdJEWWdndyRxqvmskKjhzzVF3uDkJyWFHo5K88mKvB9rMuKiGiqD9M1cvseHmN3BoRjcmb5Ecr4XGWcEn -p Raspberry
+cd minerTest
 
-## Wer möchte kann bis hier einen ersten Kryptomining Test machen ##
-## Achtung, das ist meine Wallet Addresse ##
- 
-pi@raspberrypi:~ $ cd xmrig
-pi@raspberrypi:~/xmrig $ cd build
-pi@raspberrypi:
+~/minerTest/build -o xmr.2miners.com:2222 -u 887d4UM3gdCWPMtdJEWWdndyRxqvmskKjhzzVF3uDkJyWFHo5K88mKvB9rMuKiGiqD9M1cvseHmN3BoRjcmb5Ecr4XGWcEn -p Raspberry
+
+# Resultshould be shown here
+https://xmr.2miners.com/account/887d4UM3gdCWPMtdJEWWdndyRxqvmskKjhzzVF3uDkJyWFHo5K88mKvB9rMuKiGiqD9M1cvseHmN3BoRjcmb5Ecr4XGWcEn
 
 
-danach sollte das Scirpt starten!  In diesem Fall hier läuft es nicht! Wegen einem fehler.
- * ABOUT        XMRig/6.16.4 gcc/8.3.0
+## Thats my Wallet Addresse but you could use it for Testing ##
  
-pi@raspberrypi:~/xmrig/build $ 
- 
+cd xmrig
+cd build
+
 # XMRig
 
 [![Github All Releases](https://img.shields.io/github/downloads/xmrig/xmrig/total.svg)](https://github.com/xmrig/xmrig/releases)
