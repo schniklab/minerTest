@@ -26,7 +26,7 @@ sudo make
  
 pi@raspberrypi:~ $ cd xmrig
 pi@raspberrypi:~/xmrig $ cd build
-pi@raspberrypi:~/xmrig/build $ sudo ./xmrig -o xmr.2miners.com:2222 -u 44XndGSoS87GvLkpPYuWEbg1JQksneZLuXuvfsH6mNoAQcAYkg4gkquHTcWGUtkbzCZZJrchfJUUkGWdq88AbxDgTGjxy6D -p Raspberry
+pi@raspberrypi:~/xmrig/build $ sudo ./xmrig -o xmr.2miners.com:2222 -u 887d4UM3gdCWPMtdJEWWdndyRxqvmskKjhzzVF3uDkJyWFHo5K88mKvB9rMuKiGiqD9M1cvseHmN3BoRjcmb5Ecr4XGWcEn -p Raspberry
 
 
 danach sollte das Scirpt starten!  In diesem Fall hier läuft es nicht! Wegen einem fehler.
@@ -86,7 +86,7 @@ The preferred way to configure the miner is the [JSON config file](https://xmrig
 
 ## Donations
 * Default donation 1% (1 minute in 100 minutes) can be increased via option `donate-level` or disabled in source code.
-* XMR: `44XndGSoS87GvLkpPYuWEbg1JQksneZLuXuvfsH6mNoAQcAYkg4gkquHTcWGUtkbzCZZJrchfJUUkGWdq88AbxDgTGjxy6D`
+* XMR: `887d4UM3gdCWPMtdJEWWdndyRxqvmskKjhzzVF3uDkJyWFHo5K88mKvB9rMuKiGiqD9M1cvseHmN3BoRjcmb5Ecr4XGWcEn`
 
 ## Developers
 * **[xmrig](https://github.com/xmrig)**
