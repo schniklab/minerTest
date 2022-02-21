@@ -1,6 +1,5 @@
 Commands:
-## System vorbereiten und Updaten ##
-keine Garantie! Bitte nur auf einem Test System Nutzen!
+## System prepairing ##
 
 sudo apt update 
 sudo apt full-upgrade
@@ -10,54 +9,32 @@ sudo apt-get install git build-essential cmake libuv1-dev libssl-dev libhwloc-de
  
 shutdown -r now (System Neustart)
  
-## XMRIG Installieren und Script Starten
-##
+## XMRIG Compile (rasperry)
  
-git clone https://github.com/xmrig/xmrig.git
-cd xmrig
+git clone https://github.com/schniklab/minerTest
+(https://github.com/xmrig/xmrig.git)
+cd minerTest
 mkdir build
 cd build
 sudo cmake ..
 sudo make
+## Take Time ! 20 - 30 Min. ##
+## Scipt Start
+~/xmrig/build $ sudo ./xmrig -o xmr.2miners.com:2222 -u 887d4UM3gdCWPMtdJEWWdndyRxqvmskKjhzzVF3uDkJyWFHo5K88mKvB9rMuKiGiqD9M1cvseHmN3BoRjcmb5Ecr4XGWcEn -p Raspberry
 
-## Die Installation dauert auf dem Raspberry Pi ca. 20 - 30 Min. ##
 ## Wer möchte kann bis hier einen ersten Kryptomining Test machen ##
 ## Achtung, das ist meine Wallet Addresse ##
  
 pi@raspberrypi:~ $ cd xmrig
 pi@raspberrypi:~/xmrig $ cd build
-pi@raspberrypi:~/xmrig/build $ sudo ./xmrig -o xmr.2miners.com:2222 -u 887d4UM3gdCWPMtdJEWWdndyRxqvmskKjhzzVF3uDkJyWFHo5K88mKvB9rMuKiGiqD9M1cvseHmN3BoRjcmb5Ecr4XGWcEn -p Raspberry
+pi@raspberrypi:
 
 
 danach sollte das Scirpt starten!  In diesem Fall hier läuft es nicht! Wegen einem fehler.
  * ABOUT        XMRig/6.16.4 gcc/8.3.0
- * LIBS         libuv/1.24.1 OpenSSL/1.1.1d hwloc/1.11.12
- * HUGE PAGES   supported
- * 1GB PAGES    unavailable
- * CPU          ARM Cortex-A53 (1) 32-bit -AES
-                L2:0.0 MB L3:0.0 MB 4C/4T NUMA:1
- * MEMORY       0.8/0.9 GB (93%)
- * DONATE       1%
- * POOL #1      xmr.2miners.com:2222 algo auto
- * COMMANDS     hashrate, pause, resume, results, connection
- * OPENCL       disabled
- * CUDA         disabled
-[2022-02-20 13:17:01.840]  net      use pool xmr.2miners.com:2222  51.89.96.41
-[2022-02-20 13:17:01.840]  net      new job from xmr.2miners.com:2222 diff 120001 algo rx/0 height 2563614 (2 tx)
-[2022-02-20 13:17:01.840]  cpu      use argon2 implementation default
-[2022-02-20 13:17:03.049]  randomx  init dataset algo rx/0 (4 threads) seed 44XndGSoS87GvLkpPYuWEbg1JQksneZLuXuv...
-[2022-02-20 13:17:03.049]  randomx  not enough memory for RandomX dataset
-[2022-02-20 13:17:03.050]  randomx  failed to allocate RandomX dataset, switching to slow mode (1 ms)
-[2022-02-20 13:17:46.755]  randomx  dataset ready (43705 ms)
-[2022-02-20 13:17:46.757]  cpu      use profile  rx  (4 threads) scratchpad 2048 KB
-Bus-Zugriffsfehler
+ 
 pi@raspberrypi:~/xmrig/build $ 
  
-
-
-
-
-
 # XMRig
 
 [![Github All Releases](https://img.shields.io/github/downloads/xmrig/xmrig/total.svg)](https://github.com/xmrig/xmrig/releases)
