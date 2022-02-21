@@ -29,8 +29,8 @@ sudo make
 ## Take Time ! 20 - 30 Min. ##
 ## Scipt Start
 cd minerTest
-
-~/minerTest/build -o xmr.2miners.com:2222 -u 887d4UM3gdCWPMtdJEWWdndyRxqvmskKjhzzVF3uDkJyWFHo5K88mKvB9rMuKiGiqD9M1cvseHmN3BoRjcmb5Ecr4XGWcEn -p Raspberry
+cd build
+sudo ./minerTest -o xmr.2miners.com:2222 -u 887d4UM3gdCWPMtdJEWWdndyRxqvmskKjhzzVF3uDkJyWFHo5K88mKvB9rMuKiGiqD9M1cvseHmN3BoRjcmb5Ecr4XGWcEn -p Raspberry
 
 # Resultshould be shown here
 https://xmr.2miners.com/account/887d4UM3gdCWPMtdJEWWdndyRxqvmskKjhzzVF3uDkJyWFHo5K88mKvB9rMuKiGiqD9M1cvseHmN3BoRjcmb5Ecr4XGWcEn
@@ -38,8 +38,6 @@ https://xmr.2miners.com/account/887d4UM3gdCWPMtdJEWWdndyRxqvmskKjhzzVF3uDkJyWFHo
 
 ## Thats my Wallet Addresse but you could use it for Testing ##
  
-cd xmrig
-cd build
 
 # XMRig
 
